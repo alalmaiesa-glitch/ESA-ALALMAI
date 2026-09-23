@@ -32,7 +32,7 @@ jobs:
           mkdir -p dist/assets
           cp index.html dist/index.html
           cp index.html dist/404.html
-          cat assets/photo.b64.* | base64 --decode > dist/assets/esa-almai.webp
+          cp assets/esa-almai.webp dist/assets/esa-almai.webp
           echo "de18770c8f2020a8166aed99d738b6fe4d597e7fd0c63816b5a52ce0615da7dd  dist/assets/esa-almai.webp" | sha256sum -c -
           touch dist/.nojekyll
 
